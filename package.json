@@ -2,6 +2,7 @@
   "name": "react-parallax-and-sticky-columns",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "node-sass": "^4.12.0",
