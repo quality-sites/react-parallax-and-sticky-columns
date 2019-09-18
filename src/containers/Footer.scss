@@ -1,0 +1,9 @@
+@import '../styles/Colors';
+
+.footer { 
+  color: $black;
+  background-color: $light-gray;
+  text-align: center;
+  padding: 2rem 0;
+  bottom: 0;
+}

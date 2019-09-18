@@ -1,0 +1,11 @@
+@import '../styles/Colors';
+
+.header { 
+  color: $black;
+  background-color: $light-gray;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 26px;
+  font-weight: bold;
+}

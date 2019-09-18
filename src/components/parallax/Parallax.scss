@@ -1,0 +1,107 @@
+@import '../../styles/Colors';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+.qsparallax {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 1;
+    width: 100%;
+    padding: 0;
+
+    .parallax-inner {
+      margin: 0;
+      padding: 0;
+    }
+
+    &--desktop-image {
+      display: none;
+      width: 100%;
+    }
+
+    &--mobile-image {
+      display: block;
+      width: 100%;
+    }
+
+    &--content {
+      position: absolute;
+      top: 40%;
+      font-size: 40px;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__left--content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 2;
+    width: 90%;
+    padding: 5rem 5% 0;
+  }
+
+  &__right--content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 3;
+    width: 90%;
+    padding: 5rem 5% 0;
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  &__bottom--content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 4;
+    width: 100%;
+    padding: 7rem 0 10rem;
+    text-align: center;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+  .qsparallax {
+
+    &__main {
+      padding: 0 0 10rem 0;
+
+      &--desktop-image {
+        display: block;
+      }
+
+      &--mobile-image {
+        display: none;
+      }
+
+      &--content {
+        font-size: 104px;
+      }
+    }
+
+    &__left--content {
+      width: 40%;
+      padding: 3rem 0 0 10%;
+    }
+
+    &__right--content {
+      width: 40%;
+      padding: 0 10% 0 0;
+    }
+
+    &__bottom--content {
+      padding: 7rem 0 5rem;
+    }
+
+  }
+}
